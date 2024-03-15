@@ -14,6 +14,10 @@ body {
     background-color: #4f8b69;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 :root {
     --border-color: #fff5;
     --w-image: 500px;
@@ -143,6 +147,7 @@ header nav {
 
 .carousel .list .item .main-content .content {
     padding: 150px 20px 20px 80px;
+    max-width: 900px;
 }
 
 .carousel .list .item .main-content .content h2 {
@@ -166,6 +171,7 @@ header nav {
     border-radius: 30px;
     border: none;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .arrows {
@@ -331,6 +337,9 @@ header nav {
     .arrows {
         left: 50%;
         justify-content: center;
+    }
+    .carousel .list::before {
+        border-left: unset;
     }
 }
 
